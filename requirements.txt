@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+langchain==1.1.0
+langchain-core>=1.1.0,<2.0.0
+langchain-openai==1.1.0
+langgraph>=1.0.2,<1.1.0
+
+dataclasses-json
