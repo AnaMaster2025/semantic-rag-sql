@@ -1,0 +1,10 @@
+*.sqlite
+*.db
+seed*.sql
+rellenar_datos.sql
+__pycache__/
+.venv/
+venv/
+.env
+.env.*
+.git/

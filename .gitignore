@@ -1,6 +1,22 @@
-.venv/
+# NO subir bases de datos
+*.sqlite
+*.db
+
+# Seeds SQL (si los usas solo local)
+seed*.sql
+rellenar_datos.sql
+
+# Python
 __pycache__/
-.env
-db.sqlite
-metrics.sqlite
 *.pyc
+.venv/
+venv/
+
+# Variables de entorno
+.env
+.env.*
+
+# OS/otros
+.DS_Store
+
+generate_sales_seed.py

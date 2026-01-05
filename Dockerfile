@@ -2,6 +2,7 @@ FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+ENV DB_PATH=/data/app.db
 
 WORKDIR /app
 
@@ -17,5 +18,5 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["uvicorn", "api_server:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "fastapi_app:api", "--host", "0.0.0.0", "--port", "8000"]
 
